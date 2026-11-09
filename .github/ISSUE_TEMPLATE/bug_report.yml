@@ -8,11 +8,29 @@ body:
       value: |
         This repository is **public**: do not include confidential project data, screenshots of proprietary models,
         customer names or credentials. Email support@baselinez.com for anything private.
+  - type: dropdown
+    id: component
+    attributes:
+      label: Component
+      description: Where did the problem occur?
+      options:
+        - Meta Quest app
+        - PCVR (Windows)
+        - IGLOO app
+        - IMMERSA app
+        - Mobile AR (iOS / Android)
+        - XR glasses (beta)
+        - Web Portal
+        - Petrel plugin
+        - BaselineZ Studio
+        - Other / not sure
+    validations:
+      required: true
   - type: textarea
     id: description
     attributes:
       label: Description
-      description: What went wrong, and how can we reproduce it? Please include the BaselineZ version and your device or headset.
+      description: What happened, how can we reproduce it, and what did you expect instead? Please include the BaselineZ version and your device or headset.
       placeholder: |
         Version: 2026.2, Meta Quest 3
 
@@ -26,3 +44,10 @@ body:
     attributes:
       label: Screenshots
       description: Optional. Drag images here. Remove anything confidential first.
+  - type: checkboxes
+    id: confidentiality
+    attributes:
+      label: Confidentiality
+      options:
+        - label: This report contains no confidential data.
+          required: true
