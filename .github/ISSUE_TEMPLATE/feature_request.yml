@@ -1,0 +1,63 @@
+name: Enhancement request
+description: Suggest a new feature or an improvement to an existing one.
+title: "[Enhancement]: "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping shape BaselineZ. This repository is **public**: do not include confidential data.
+        Please search existing issues first and add a 👍 to a matching request instead of opening a duplicate.
+  - type: dropdown
+    id: component
+    attributes:
+      label: Component
+      description: Which parts of BaselineZ does this concern?
+      multiple: true
+      options:
+        - Meta Quest app
+        - PCVR (Windows)
+        - IGLOO app
+        - IMMERSA app
+        - Mobile AR (iOS / Android)
+        - XR glasses (beta)
+        - Web Portal
+        - Petrel plugin
+        - BaselineZ Studio
+        - Other / not sure
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem or use case
+      description: What are you trying to achieve, and what makes it hard today?
+      placeholder: "When reviewing a well plan with my team, I want to ..."
+    validations:
+      required: true
+  - type: textarea
+    id: solution
+    attributes:
+      label: Proposed solution
+      description: How would you like it to work?
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives or workarounds
+      description: Anything you have tried or considered.
+  - type: dropdown
+    id: impact
+    attributes:
+      label: Impact
+      description: How important is this for your work?
+      options:
+        - Nice to have
+        - Important
+        - Blocking our use of BaselineZ
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional context
+      description: Mockups, examples or references. Remove anything confidential first.

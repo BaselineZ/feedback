@@ -1,0 +1,37 @@
+name: Question
+description: Ask how something in BaselineZ works.
+title: "[Question]: "
+labels: ["question"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please check the documentation and release notes on [baselinez.com](https://www.baselinez.com) first.
+        This repository is **public**: for account, licensing or confidential questions, email support@baselinez.com.
+  - type: dropdown
+    id: component
+    attributes:
+      label: Component
+      options:
+        - Meta Quest app
+        - PCVR (Windows)
+        - IGLOO app
+        - IMMERSA app
+        - Mobile AR (iOS / Android)
+        - XR glasses (beta)
+        - Web Portal
+        - Petrel plugin
+        - BaselineZ Studio
+        - Other / not sure
+  - type: input
+    id: version
+    attributes:
+      label: BaselineZ version
+      placeholder: "2026.2"
+  - type: textarea
+    id: question
+    attributes:
+      label: Your question
+      description: What would you like to know? Include what you have already tried.
+    validations:
+      required: true

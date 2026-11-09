@@ -1,0 +1,92 @@
+name: Defect report
+description: Something in BaselineZ does not work as expected.
+title: "[Defect]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting a defect. This repository is **public**: do not include confidential project data,
+        screenshots of proprietary models, customer names or credentials. Email support@baselinez.com for anything private.
+  - type: dropdown
+    id: component
+    attributes:
+      label: Component
+      description: Where did the problem occur?
+      options:
+        - Meta Quest app
+        - PCVR (Windows)
+        - IGLOO app
+        - IMMERSA app
+        - Mobile AR (iOS / Android)
+        - XR glasses (beta)
+        - Web Portal
+        - Petrel plugin
+        - BaselineZ Studio
+        - Other / not sure
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: BaselineZ version
+      description: The release you are using, for example 2026.2. Add the build number if you know it.
+      placeholder: "2026.2"
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: Environment
+      description: Device or headset, operating system, and Petrel version if relevant.
+      placeholder: "Meta Quest 3, Windows 11, Petrel 2025.1"
+  - type: textarea
+    id: description
+    attributes:
+      label: What happened?
+      description: A clear description of the defect.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Open project ...
+        2. Select ...
+        3. See error
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+      description: What did you expect to happen instead?
+    validations:
+      required: true
+  - type: dropdown
+    id: frequency
+    attributes:
+      label: How often does it happen?
+      options:
+        - Every time
+        - Sometimes
+        - Happened once
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs or error messages
+      description: Paste error text here. It is formatted as code automatically. Remove anything confidential first.
+      render: text
+  - type: textarea
+    id: attachments
+    attributes:
+      label: Screenshots or attachments
+      description: Drag files here. Remove anything confidential first.
+  - type: checkboxes
+    id: confidentiality
+    attributes:
+      label: Confidentiality
+      options:
+        - label: This report contains no confidential data.
+          required: true

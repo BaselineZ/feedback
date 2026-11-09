@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Private or confidential support
+    url: mailto:support@baselinez.com
+    about: For anything involving confidential data, licensing, accounts or security issues, email support instead of posting here.
+  - name: BaselineZ website
+    url: https://www.baselinez.com
+    about: Downloads, release notes and documentation.
