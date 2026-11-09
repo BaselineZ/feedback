@@ -3,7 +3,7 @@
 Public feedback tracker for [BaselineZ](https://www.baselinez.com), the immersive 3D visualization and
 collaboration platform for subsurface data.
 
-Use this repository to report defects, request enhancements and ask questions about any part of BaselineZ:
+Use this repository to report bugs, request enhancements and ask questions about any part of BaselineZ:
 the Meta Quest, PCVR, IGLOO, IMMERSA, mobile AR and XR glasses apps, the Web Portal, the Petrel plugin and
 BaselineZ Studio.
 
@@ -24,11 +24,11 @@ BaselineZ Studio.
 
 | Template | Use it for |
 | --- | --- |
-| **Defect report** | Something does not work as expected: crashes, errors, wrong results. |
+| **Bug report** | Something does not work as expected: crashes, errors, wrong results. |
 | **Enhancement request** | A new feature or an improvement to an existing one. |
 | **Question** | How something works, or how to do something in BaselineZ. |
 
-A good defect report includes the BaselineZ version (for example 2026.2), the device or headset, steps to
+A good bug report includes the BaselineZ version (for example 2026.2), the device or headset, steps to
 reproduce, and what you expected to happen. Logs and screenshots help, as long as they contain nothing confidential.
 
 ## What happens next
