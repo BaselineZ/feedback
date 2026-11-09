@@ -26,13 +26,21 @@ body:
         - Other / not sure
     validations:
       required: true
+  - type: input
+    id: version
+    attributes:
+      label: BaselineZ version
+      description: The release you are using, for example 2026.2. Add the build number if you know it.
+      placeholder: "2026.2"
+    validations:
+      required: true
   - type: textarea
     id: description
     attributes:
       label: Description
-      description: What happened, how can we reproduce it, and what did you expect instead? Please include the BaselineZ version and your device or headset.
+      description: What happened, how can we reproduce it, and what did you expect instead? Please mention your device or headset.
       placeholder: |
-        Version: 2026.2, Meta Quest 3
+        Meta Quest 3
 
         1. Open project ...
         2. Select ...
